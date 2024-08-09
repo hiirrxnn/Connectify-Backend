@@ -8,7 +8,7 @@ const bcrypt = require('bcryptjs');
 const ws = require('ws');
 const Message = require('./models/Message');
 const path = require('path');
-require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
+require('dotenv').config({ path: path.resolve(__dirname, './.env') });
 const mongoURL = process.env.mongoURL;
 const jwtSecret = process.env.jwtSecret;
 const bcryptSalt = bcrypt.genSaltSync(10);
